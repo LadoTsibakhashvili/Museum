@@ -1,0 +1,9 @@
+<ul>
+  <li
+    *ngFor="let user of users"
+    [isAlergic]="user.attributes.hypoallergenic"
+    >
+    {{user.attributes.name}} {{ user | isAlergicPipe}}
+  </li>
+</ul>
+
